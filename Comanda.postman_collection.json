@@ -1,0 +1,278 @@
+{
+	"info": {
+		"_postman_id": "f3883111-87ce-4f7d-9190-900be82a6940",
+		"name": "Comanda",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26857078"
+	},
+	"item": [
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "ObtenerTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:666/usuarios",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CargarUno",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombre",
+									"value": "Lucas",
+									"type": "text"
+								},
+								{
+									"key": "apellido",
+									"value": "Avalos",
+									"type": "text"
+								},
+								{
+									"key": "usuario",
+									"value": "lucasbartender",
+									"type": "text"
+								},
+								{
+									"key": "clave",
+									"value": "clavel",
+									"type": "text"
+								},
+								{
+									"key": "tipo",
+									"value": "Bartender",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:666/usuarios/",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"usuarios",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Productos",
+			"item": [
+				{
+					"name": "ObtenerTodos Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:666/productos",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CargarUno Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombre",
+									"value": "Corona",
+									"type": "text"
+								},
+								{
+									"key": "precio",
+									"value": "12000",
+									"type": "text"
+								},
+								{
+									"key": "tipo",
+									"value": "Bebida",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:666/productos/",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"productos",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mesas",
+			"item": [
+				{
+					"name": "ObtenerTodos Copy 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:666/productos",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CargarUno Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "estado",
+									"value": "Cerrada",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:666/mesas/",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"mesas",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pedidos",
+			"item": [
+				{
+					"name": "ObtenerTodos Copy 3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:666/pedidos",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CargarUno Copy 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "estado",
+									"value": "En preparacion",
+									"type": "text"
+								},
+								{
+									"key": "id_mesa",
+									"value": "KPTUP",
+									"type": "text"
+								},
+								{
+									"key": "id_producto",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "cantidad_producto",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "tiempo_finalizacion",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "sector",
+									"value": "Patio trasero",
+									"type": "text"
+								},
+								{
+									"key": "importe",
+									"value": "15000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:666/pedidos/",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"pedidos",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
